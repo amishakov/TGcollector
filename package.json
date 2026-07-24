@@ -59,5 +59,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "packageManager": "yarn@4.4.1+sha256.920b4530755296dc2ce8b4351f057d4a26429524fcb2789d277560d94837c27e",
+  "devDependencies": {
+    "husky": "^9.1.7"
   }
 }
