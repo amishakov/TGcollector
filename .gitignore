@@ -9,6 +9,8 @@
 /coverage
 /playwright-report
 /test-results
+/.auth
+/.downloads
 
 # production
 /build

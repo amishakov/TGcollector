@@ -40,6 +40,9 @@
     "test:unit:watch": "react-scripts test",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
+    "test:e2e:debug": "playwright test --debug",
+    "test:e2e:clean-auth": "node scripts/clean-test-auth.js",
+    "test:e2e:fresh": "yarn test:e2e:clean-auth && playwright test --project=setup --headed && playwright test --project=chromium",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -62,6 +65,7 @@
   },
   "packageManager": "yarn@4.4.1+sha256.920b4530755296dc2ce8b4351f057d4a26429524fcb2789d277560d94837c27e",
   "devDependencies": {
+    "dotenv": "^17.4.2",
     "husky": "^9.1.7"
   }
 }
